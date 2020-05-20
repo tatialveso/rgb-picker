@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho prático do módulo 1</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Escala de RGB</h1>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>(R) Vermelho:</label>
+                </td>
+                <td>
+                    <input type="range" name="" id="red" step="1" min="0" max="255" value="0">
+                </td>
+                <td>
+                    <input type="text" disabled value=0 id="redLength">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>(G) Verde:</label>
+                </td>
+                <td>
+                    <input type="range" name="" id="green" step="1" min="0" max="255" value="0">
+                </td>
+                <td>
+                    <input type="text" disabled value=0 id="greenLength">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>(B) Azul:</label>
+                </td>
+                <td>
+                    <input type="range" name="" id="blue" step="1" min="0" max="255" value="0">
+                </td>
+                <td>
+                    <input type="text" disabled value=0 id="blueLength">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div id="color"></div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
