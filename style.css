@@ -5,24 +5,37 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 20px;
+    background-color: #D5D9D7;
+    font-family: monospace;
 }
 
 h1 {
     text-align: center;
-}
-
-#color {
-    margin: 50px;
-    margin-left: 70px;
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
+    padding: 20px;
 }
 
 form {
-    margin-left: 40px;
-    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 100px;
+}
+
+input[type=text] {
+    padding: 5px;
+}
+
+.color {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 16px;
+}
+
+#color {
+    background-color: #ffffff;
+    margin: 50px auto;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #D5D9D7;
 }
