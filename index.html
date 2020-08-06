@@ -4,31 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>color picker</title>
+    <title>rgb color picker</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>pick a rgb color</h1>
-    <form>
-        <section class="color">
-            <label>(R) Vermelho:</label>
-            <input type="range" name="" id="red" step="1" min="0" max="255" value="0">
-            <input type="text" disabled value=0 id="redLength">
-        </section>
-        <section class="color">
-            <label>(G) Verde:</label>
-            <input type="range" name="" id="green" step="1" min="0" max="255" value="0">
-            <input type="text" disabled value=0 id="greenLength">
-        </section>
-        <section class="color">
-            <label>(B) Azul:</label>
-            <input type="range" name="" id="blue" step="1" min="0" max="255" value="0">
-            <input type="text" disabled value=0 id="blueLength">
-        </section>
-    </form>
-
-    <div id="color"></div>
+    <header>
+        <h1>create a rgb color</h1>
+    </header>
+    <main>
+        <form>
+            <section class="color">
+                <label>(R) Vermelho:</label>
+                <input type="range" name="" id="red" step="1" min="0" max="255" value="0">
+                <input type="text" disabled value=0 id="redLength">
+            </section>
+            <section class="color">
+                <label>(G) Verde:</label>
+                <input type="range" name="" id="green" step="1" min="0" max="255" value="0">
+                <input type="text" disabled value=0 id="greenLength">
+            </section>
+            <section class="color">
+                <label>(B) Azul:</label>
+                <input type="range" name="" id="blue" step="1" min="0" max="255" value="0">
+                <input type="text" disabled value=0 id="blueLength">
+            </section>
+        </form>
+    
+        <div id="color"></div>
+    </main>
+    <footer>
+        <p>
+            criado com ❤ por <a href="https://github.com/tatialveso" target="_blank">tati</a>
+        </p>
+    </footer>
 
     <script src="app.js"></script>
 </body>
